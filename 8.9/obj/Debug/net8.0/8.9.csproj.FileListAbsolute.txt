@@ -1,0 +1,15 @@
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.AssemblyInfoInputs.cache
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.AssemblyInfo.cs
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.csproj.CoreCompileInputs.cache
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.sourcelink.json
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\bin\Debug\net8.0\8.9.exe
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\bin\Debug\net8.0\8.9.deps.json
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\bin\Debug\net8.0\8.9.runtimeconfig.json
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\bin\Debug\net8.0\8.9.dll
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\bin\Debug\net8.0\8.9.pdb
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.dll
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\refint\8.9.dll
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.pdb
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\8.9.genruntimeconfig.cache
+C:\Skola\skola\programovani\takuzporadne\takuzporadne\8.9\8.9\obj\Debug\net8.0\ref\8.9.dll
