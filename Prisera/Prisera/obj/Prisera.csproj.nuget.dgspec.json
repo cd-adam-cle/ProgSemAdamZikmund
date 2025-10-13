@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/home/adam-zikmund/ProgSemAdamZikmund/Prisera/Prisera/Prisera.csproj": {}
   },
   "projects": {
@@ -12,14 +13,33 @@
         "projectPath": "/home/adam-zikmund/ProgSemAdamZikmund/Prisera/Prisera/Prisera.csproj",
         "packagesPath": "/home/adam-zikmund/.nuget/packages/",
         "outputPath": "/home/adam-zikmund/ProgSemAdamZikmund/Prisera/Prisera/obj/",
+=======
+    "C:\\Users\\aziky\\Desktop\\ProgSemAdamZikmund\\Prisera\\Prisera\\Prisera.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aziky\\Desktop\\ProgSemAdamZikmund\\Prisera\\Prisera\\Prisera.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aziky\\Desktop\\ProgSemAdamZikmund\\Prisera\\Prisera\\Prisera.csproj",
+        "projectName": "Prisera",
+        "projectPath": "C:\\Users\\aziky\\Desktop\\ProgSemAdamZikmund\\Prisera\\Prisera\\Prisera.csproj",
+        "packagesPath": "C:\\Users\\aziky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aziky\\Desktop\\ProgSemAdamZikmund\\Prisera\\Prisera\\obj\\",
+>>>>>>> parent of f971799 (Maze : Dokoncen)
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/adam-zikmund/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\aziky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,9 +56,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -54,26 +74,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.17, 8.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.17, 8.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.17, 8.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/adam-zikmund/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

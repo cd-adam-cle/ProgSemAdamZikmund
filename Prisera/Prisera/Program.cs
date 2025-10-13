@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Prisera
 {
@@ -29,6 +28,7 @@ namespace Prisera
         /// <param name="args">Argumenty příkazové řádky (nepoužívají se).</param>
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             // Načtení šířky a výšky bludiště
             int sirka = int.Parse(Console.ReadLine());
             int vyska = int.Parse(Console.ReadLine());
@@ -44,6 +44,11 @@ namespace Prisera
                 if (!provedlPohyb) // Zastavení, pokud příšera nemůže pokračovat
                     break;
             }
+=======
+            char[,] pole = Dostanipole(); // Přidána středník
+            Pole Maze = new Pole(pole); // Opravena syntaxe konstruktoru
+            Maze.ZobrazPole(); // Zobrazíme pole pro kontrolu
+>>>>>>> parent of f971799 (Maze : Dokoncen)
         }
 
         /// <summary>
@@ -54,6 +59,7 @@ namespace Prisera
         /// <returns>Dvourozměrné pole znaků představující bludiště.</returns>
         static char[,] NactiBludiste(int sirka, int vyska)
         {
+<<<<<<< HEAD
             char[,] bludiste = new char[vyska, sirka];
             for (int i = 0; i < vyska; i++)
             {
@@ -67,6 +73,21 @@ namespace Prisera
                 for (int j = radek.Length; j < sirka; j++)
                 {
                     bludiste[i, j] = '.';
+=======
+            Console.WriteLine("zadejte vysku");
+            int vyska = int.Parse(Console.ReadLine()); // Opravena konverze
+            Console.WriteLine("zadejte sirku");
+            int sirka = int.Parse(Console.ReadLine()); // Opravena konverze a překlep
+            Console.WriteLine("zadejte pole"); // Opravena metoda
+            char[,] pole = new char[vyska, sirka];
+
+            for (int i = 0; i < vyska; i++)
+            {
+                string line = Console.ReadLine(); // Přidán středník
+                for (int j = 0; j < Math.Min(line.Length, sirka); j++) // Opravena vlastnost a přidána ochrana
+                {
+                        pole[i, j] = line[j];
+>>>>>>> parent of f971799 (Maze : Dokoncen)
                 }
             }
             return bludiste;
@@ -83,6 +104,7 @@ namespace Prisera
         /// </summary>
         public int Sirka { get; private set; }
 
+<<<<<<< HEAD
         /// <summary>
         /// Výška bludiště (počet řádků).
         /// </summary>
@@ -113,16 +135,24 @@ namespace Prisera
         /// </summary>
         /// <param name="vstupniBludiste">Vstupní dvourozměrné pole znaků představující bludiště.</param>
         public Bludiste(char[,] vstupniBludiste)
+=======
+        public Pole(char[,] vstupPole) // Zjednodušený konstruktor
+>>>>>>> parent of f971799 (Maze : Dokoncen)
         {
             Vyska = vstupniBludiste.GetLength(0);
             Sirka = vstupniBludiste.GetLength(1);
             Policka = new char[Vyska, Sirka];
 
+<<<<<<< HEAD
             // Zkopírování vstupního bludiště a nalezení příšery
+=======
+            // Zkopírujeme pole
+>>>>>>> parent of f971799 (Maze : Dokoncen)
             for (int i = 0; i < Vyska; i++)
             {
                 for (int j = 0; j < Sirka; j++)
                 {
+<<<<<<< HEAD
                     Policka[i, j] = vstupniBludiste[i, j];
                     if ("^>v<".Contains(Policka[i, j]))
                     {
@@ -197,6 +227,34 @@ namespace Prisera
         private bool JePoleVolne(int radek, int sloupec)
         {
             return radek >= 0 && radek < Vyska && sloupec >= 0 && sloupec < Sirka && Policka[radek, sloupec] != 'X';
+=======
+                    Poles[i, j] = vstupPole[i, j]; // Opravený název proměnné
+                }
+            }
+            Kroky();
+            
+        }
+        public void Kroky()
+        {
+            List<int> KdeJe = new List<int>();
+
+            // OPRAVENO - odstranění nekonečné smyčky
+            for (int i = 0; i < Vyska; i++)
+            {
+                for (int j = 0; j < Sirka; j++)
+                {
+                    if (Poles[i, j] == '>' || Poles[i, j] == '<' || Poles[i, j] == '^' || Poles[i, j] == 'ˇ')
+                    {
+                        KdeJe.Add(i);
+                        KdeJe.Add(j);
+
+                        // Ukončíme hledání po první nalezenej příšeře
+                        //Console.WriteLine($"Prisera je na souradnicich {KdeJe[0] + 1} , {KdeJe[1] + 1} ");
+                        return; // Ukončí metodu
+                    }
+                }
+            }
+>>>>>>> parent of f971799 (Maze : Dokoncen)
         }
 
         /// <summary>
