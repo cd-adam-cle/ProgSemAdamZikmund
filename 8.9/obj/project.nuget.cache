@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0uwGSXc0Ghc=",
+  "dgSpecHash": "P5flfAIVmhI=",
   "success": true,
-  "projectFilePath": "C:\\Skola\\skola\\programovani\\takuzporadne\\takuzporadne\\8.9\\8.9\\8.9.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/adam-zikmund/ProgSemAdamZikmund/8.9/8.9.csproj",
+  "expectedPackageFiles": [
+    "/home/adam-zikmund/.nuget/packages/microsoft.netcore.app.ref/8.0.17/microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "/home/adam-zikmund/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.17/microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
+    "/home/adam-zikmund/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.17/microsoft.netcore.app.host.linux-x64.8.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

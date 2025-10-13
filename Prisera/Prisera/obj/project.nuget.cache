@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bEgXAboaePA=",
+  "dgSpecHash": "WqZCuweAyVE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aziky\\Desktop\\ProgSemAdamZikmund\\Prisera\\Prisera\\Prisera.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/adam-zikmund/ProgSemAdamZikmund/Prisera/Prisera/Prisera.csproj",
+  "expectedPackageFiles": [
+    "/home/adam-zikmund/.nuget/packages/microsoft.netcore.app.ref/8.0.17/microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "/home/adam-zikmund/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.17/microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
+    "/home/adam-zikmund/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.17/microsoft.netcore.app.host.linux-x64.8.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
