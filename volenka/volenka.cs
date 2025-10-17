@@ -21,57 +21,57 @@ namespace volenka
 
             public Volenka(int[,] vstupPole)
             {
-                Pocet = (int)Math.Sqrt(vstupPole.GetLength(0)); // Předpokládáme čtvercovou matici
-                MuzPref = new int[Pocet, Pocet];
-                ZenaPref = new int[Pocet, Pocet];
-                Parovani = new int[Pocet]; // Inicializace na -1 (nikdo nepárován)
-                for (int i = 0; i < Pocet; i++) {Parovani[i] = -1;}
+                Pocet = (int)Math.Sqrt(vstupPole.GetLength(0)); // dostanem pocet z te matice
+                MuzPref = new int[Pocet, Pocet];//vytvorime muze
+                ZenaPref = new int[Pocet, Pocet];//vytvorime zeny
+                Parovani = new int[Pocet];//vytvorime parovani
+                for (int i = 0; i < Pocet; i++) {Parovani[i] = -1;}//dame do parovani basic hodnotu
 
-                // Načtení preferencí žen (první polovina)
+                //nactem co chteji zeny 
                 for (int i = 0; i < Pocet; i++)
                 {
                     for (int j = 0; j < Pocet; j++)
                     { ZenaPref[i, j] = vstupPole[i, j]; }
                 }
-                // Načtení preferencí mužů (druhá polovina)
+                // nactem co chtej muzi 
                 for (int i = 0; i < Pocet; i++){
                     {for (int j = 0; j < Pocet; j++)
-                        MuzPref[i, j] = vstupPole[Pocet + i, j];}}
+                        MuzPref[i, j] = vstupPole[Pocet + i, j];}};
             }
 
             public void SpoctiVysledky()
             {
-                int[] muzUrovne = new int[Pocet]; // Aktuální preference muže
-                int[] zenaPartner = new int[Pocet]; // Aktuální partner ženy
+                int[] muzUrovne = new int[Pocet]; // rn preference muze
+                int[] zenaPartner = new int[Pocet]; // rn partner zeny
                 for (int i = 0; i < Pocet; i++) zenaPartner[i] = -1;
 
                 while (true)
                 {
-                    int volnyMuz = -1;
+                    int volnyMuz = -1; 
                     for (int m = 0; m < Pocet; m++){
                         if (Parovani[m] == -1)
                         {
-                            volnyMuz = m;
+                            volnyMuz = m;// preberem index volneho muzw
                             break;
                         }}
-                    if (volnyMuz == -1) break; // Všichni muži jsou spárováni
+                    if (volnyMuz == -1) break;//vsichni nekoho maj 
 
-                    int zena = MuzPref[volnyMuz, muzUrovne[volnyMuz]];
+                    int zena = MuzPref[volnyMuz, muzUrovne[volnyMuz]];//najdem si jak je na tom muz
                     muzUrovne[volnyMuz]++;
 
-                    if (zenaPartner[zena] == -1) // Žena je volná
+                    if (zenaPartner[zena] == -1) // pokud je zena je volna
                     {
-                        Parovani[volnyMuz] = zena;
-                        zenaPartner[zena] = volnyMuz;
+                        Parovani[volnyMuz] = zena; //na index muze v parovani dame zenu 
+                        zenaPartner[zena] = volnyMuz; //do seznamu partneru zeny dame muze 
                     }
                     else // Žena má partnera, porovnáme preference
                     {
-                        int staryMuz = zenaPartner[zena];
-                        int zenaPrefStary = -1, zenaPrefNovy = -1;
-                        for (int i = 0; i < Pocet; i++)
+                        int staryMuz = zenaPartner[zena]; //muz minuly
+                        int zenaPrefStary = -1, zenaPrefNovy = -1; 
+                        for (int i = 0; i < Pocet; i++)//projedem vsechny preference zeny 
                         {
-                            if (ZenaPref[zena, i] == staryMuz) zenaPrefStary = i;
-                            if (ZenaPref[zena, i] == volnyMuz) zenaPrefNovy = i;
+                            if (ZenaPref[zena, i] == staryMuz) zenaPrefStary = i; // najdeme jak su na tom muzi
+                            if (ZenaPref[zena, i] == volnyMuz) zenaPrefNovy = i; 
                         }
                         if (zenaPrefNovy < zenaPrefStary) // Nový muž je lepší
                         {
@@ -79,11 +79,12 @@ namespace volenka
                             Parovani[volnyMuz] = zena;
                             zenaPartner[zena] = volnyMuz;
                         }
+                        //pokud ne zustava to tak jak to bylp
                     }
                 }
 
-                // Výpis výsledků
-                Console.WriteLine("Výsledné párování:");
+                // Vytisknem vysledek 
+                Console.WriteLine("Vysledne pary:");
                 for (int m = 0; m < Pocet; m++)
                     Console.WriteLine($"Muž {m} -> Žena {Parovani[m]}");
             }
@@ -93,7 +94,7 @@ namespace volenka
         {
             Console.WriteLine("Zadejte počet (např. 4):");
             int pocet = int.Parse(Console.ReadLine());
-            int[,] pole = new int[pocet * 2, pocet]; // Pro muže i ženy
+            int[,] pole = new int[pocet * 2, pocet]; // Pro muze i zeny 
 
             Console.WriteLine("Zadejte preference žen (řádek po řádku):");
             for (int i = 0; i < pocet; i++)
@@ -101,7 +102,7 @@ namespace volenka
                 string line = Console.ReadLine();
                 string[] cisla = line.Split(' ');
                 for (int j = 0; j < pocet; j++)
-                    pole[i, j] = int.Parse(cisla[j]) - 1; // Převod na 0-based index
+                    pole[i, j] = int.Parse(cisla[j]) - 1;
             }
 
             Console.WriteLine("Zadejte preference mužů (řádek po řádku):");
@@ -110,7 +111,7 @@ namespace volenka
                 string line = Console.ReadLine();
                 string[] cisla = line.Split(' ');
                 for (int j = 0; j < pocet; j++)
-                    pole[pocet + i, j] = int.Parse(cisla[j]) - 1; // Převod na 0-based index
+                    pole[pocet + i, j] = int.Parse(cisla[j]) - 1; 
             }
 
             return pole;
