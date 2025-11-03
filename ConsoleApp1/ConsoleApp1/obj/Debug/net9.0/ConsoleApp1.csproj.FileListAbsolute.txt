@@ -1,0 +1,15 @@
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.deps.json
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.runtimeconfig.json
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.dll
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.pdb
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfo.cs
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.sourcelink.json
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.dll
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/refint/ConsoleApp1.dll
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
+/home/adam-zikmund/ProgSemAdamZikmund/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
