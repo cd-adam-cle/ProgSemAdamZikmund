@@ -1,7 +1,0 @@
-node_modules/
-.env
-output/
-knowledge-base/embeddings/
-*.log
-.DS_Store
-cost-history.json
