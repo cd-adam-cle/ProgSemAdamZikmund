@@ -41,52 +41,59 @@ namespace volenka
 
             public void SpoctiVysledky()
             {
-                int[] muzUrovne = new int[Pocet]; // rn preference muze
-                int[] zenaPartner = new int[Pocet]; // rn partner zeny
-                for (int i = 0; i < Pocet; i++) zenaPartner[i] = -1;
+                int[] zenaUrovne = new int[Pocet]; // kolikatyho muze zkusi zena
+                int[] muzPartnerka = new int[Pocet]; // rn partnerka muze
+                
+                // inicializace - vsichni jsou volni
+                for (int i = 0; i < Pocet; i++)
+                {
+                    muzPartnerka[i] = -1;
+                    Parovani[i] = -1; // zena -> muz
+                }
 
                 while (true)
                 {
-                    int volnyMuz = -1; 
-                    for (int m = 0; m < Pocet; m++){
-                        if (Parovani[m] == -1)
+                    int volnaZena = -1; 
+                    // najdem volnou zenu
+                    for (int z = 0; z < Pocet; z++){
+                        if (Parovani[z] == -1 && zenaUrovne[z] < Pocet)
                         {
-                            volnyMuz = m;// preberem index volneho muzw
+                            volnaZena = z;// preberem index volne zeny
                             break;
                         }}
-                    if (volnyMuz == -1) break;//vsichni nekoho maj 
+                    if (volnaZena == -1) break;//vsechny zeny maji nekoho 
 
-                    int zena = MuzPref[volnyMuz, muzUrovne[volnyMuz]];//najdem si jak je na tom muz
-                    muzUrovne[volnyMuz]++;
+                    int muz = ZenaPref[volnaZena, zenaUrovne[volnaZena]];//najdem si komu zena nabizi
+                    zenaUrovne[volnaZena]++;
 
-                    if (zenaPartner[zena] == -1) // pokud je zena je volna
+                    if (muzPartnerka[muz] == -1) // pokud muz je volny
                     {
-                        Parovani[volnyMuz] = zena; //na index muze v parovani dame zenu 
-                        zenaPartner[zena] = volnyMuz; //do seznamu partneru zeny dame muze 
+                        Parovani[volnaZena] = muz; //na index zeny v parovani dame muze 
+                        muzPartnerka[muz] = volnaZena; //do seznamu partnerek muze dame zenu 
                     }
-                    else // Žena má partnera, porovnáme preference
+                    else // Muž má partnerku, porovnáme preference
                     {
-                        int staryMuz = zenaPartner[zena]; //muz minuly
-                        int zenaPrefStary = -1, zenaPrefNovy = -1; 
-                        for (int i = 0; i < Pocet; i++)//projedem vsechny preference zeny 
+                        int staraZena = muzPartnerka[muz]; //zena minula
+                        int muzPrefStara = -1, muzPrefNova = -1; 
+                        for (int i = 0; i < Pocet; i++)//projedem vsechny preference muze 
                         {
-                            if (ZenaPref[zena, i] == staryMuz) zenaPrefStary = i; // najdeme jak su na tom muzi
-                            if (ZenaPref[zena, i] == volnyMuz) zenaPrefNovy = i; 
+                            if (MuzPref[muz, i] == staraZena) muzPrefStara = i; // najdeme jak su na tom zeny
+                            if (MuzPref[muz, i] == volnaZena) muzPrefNova = i; 
                         }
-                        if (zenaPrefNovy < zenaPrefStary) // Nový muž je lepší
+                        if (muzPrefNova < muzPrefStara) // Nová žena je lepší
                         {
-                            Parovani[staryMuz] = -1;
-                            Parovani[volnyMuz] = zena;
-                            zenaPartner[zena] = volnyMuz;
+                            Parovani[staraZena] = -1; //stara zena je volna
+                            Parovani[volnaZena] = muz; //nova zena ma muze
+                            muzPartnerka[muz] = volnaZena; //muz ma novou zenu
                         }
-                        //pokud ne zustava to tak jak to bylp
+                        //pokud ne zustava to tak jak to bylo
                     }
                 }
 
-                // Vytisknem vysledek 
+                // Vytisknem vysledek - pro kazdou zenu jejiho muze
                 Console.WriteLine("Vysledne pary:");
-                for (int m = 0; m < Pocet; m++)
-                    Console.WriteLine($"Muž {m} -> Žena {Parovani[m]}");
+                for (int z = 0; z < Pocet; z++)
+                    Console.WriteLine($"{Parovani[z] + 1}"); // +1 protoze cislujem od 1
             }
         }
 
