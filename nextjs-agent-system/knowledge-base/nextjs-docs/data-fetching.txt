@@ -1,0 +1,138 @@
+Data Fetching in Next.js 14
+
+Next.js 14 extends the native fetch API to provide caching and revalidation.
+
+Server Components - Async/Await:
+Server Components can be async and use await directly:
+
+export default async function Page() {
+  const res = await fetch('https://api.example.com/data')
+  const data = await res.json()
+
+  return <div>{data.title}</div>
+}
+
+Caching Strategies:
+
+1. Static Data (Cached by default):
+const res = await fetch('https://api.example.com/data')
+
+2. Dynamic Data (No caching):
+const res = await fetch('https://api.example.com/data', {
+  cache: 'no-store'
+})
+
+3. Revalidation (Time-based):
+const res = await fetch('https://api.example.com/data', {
+  next: { revalidate: 3600 } // Revalidate every hour
+})
+
+Parallel Data Fetching:
+export default async function Page() {
+  const [users, posts] = await Promise.all([
+    fetch('https://api.example.com/users').then(r => r.json()),
+    fetch('https://api.example.com/posts').then(r => r.json())
+  ])
+
+  return (
+    <div>
+      <Users data={users} />
+      <Posts data={posts} />
+    </div>
+  )
+}
+
+Sequential Data Fetching:
+export default async function Page() {
+  const user = await fetch('https://api.example.com/user/1').then(r => r.json())
+  const posts = await fetch(`https://api.example.com/users/${user.id}/posts`).then(r => r.json())
+
+  return <Posts posts={posts} />
+}
+
+Streaming with Suspense:
+import { Suspense } from 'react'
+
+export default function Page() {
+  return (
+    <div>
+      <h1>Dashboard</h1>
+      <Suspense fallback={<div>Loading users...</div>}>
+        <Users />
+      </Suspense>
+      <Suspense fallback={<div>Loading posts...</div>}>
+        <Posts />
+      </Suspense>
+    </div>
+  )
+}
+
+async function Users() {
+  const users = await fetch('https://api.example.com/users').then(r => r.json())
+  return <div>{users.map(u => <div key={u.id}>{u.name}</div>)}</div>
+}
+
+Route Segment Config:
+Configure caching behavior for entire routes:
+
+export const dynamic = 'force-dynamic' // Always fresh
+export const revalidate = 3600 // Revalidate every hour
+
+export default async function Page() {
+  const data = await fetch('https://api.example.com/data').then(r => r.json())
+  return <div>{data.title}</div>
+}
+
+Database Access:
+Server Components can access databases directly:
+
+import { db } from '@/lib/db'
+
+export default async function Page() {
+  const users = await db.user.findMany()
+
+  return (
+    <div>
+      {users.map(user => (
+        <div key={user.id}>{user.name}</div>
+      ))}
+    </div>
+  )
+}
+
+Client-Side Fetching:
+For Client Components, use SWR or React Query:
+
+'use client'
+
+import useSWR from 'swr'
+
+const fetcher = (url: string) => fetch(url).then(r => r.json())
+
+export default function Profile() {
+  const { data, error, isLoading } = useSWR('/api/user', fetcher)
+
+  if (error) return <div>Failed to load</div>
+  if (isLoading) return <div>Loading...</div>
+
+  return <div>Hello {data.name}</div>
+}
+
+Server Actions (Forms):
+'use server'
+
+export async function createUser(formData: FormData) {
+  const name = formData.get('name')
+  // Save to database
+  return { success: true }
+}
+
+// In component:
+export default function Form() {
+  return (
+    <form action={createUser}>
+      <input name="name" />
+      <button type="submit">Submit</button>
+    </form>
+  )
+}
