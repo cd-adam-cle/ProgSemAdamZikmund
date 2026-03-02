@@ -1,0 +1,15 @@
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/bin/Debug/net10.0/Backtrackng_Skola
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/bin/Debug/net10.0/Backtrackng_Skola.deps.json
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/bin/Debug/net10.0/Backtrackng_Skola.runtimeconfig.json
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/bin/Debug/net10.0/Backtrackng_Skola.dll
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/bin/Debug/net10.0/Backtrackng_Skola.pdb
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.GeneratedMSBuildEditorConfig.editorconfig
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.AssemblyInfoInputs.cache
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.AssemblyInfo.cs
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.csproj.CoreCompileInputs.cache
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.sourcelink.json
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.dll
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/refint/Backtrackng_Skola.dll
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.pdb
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/Backtrackng_Skola.genruntimeconfig.cache
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Backtrackng_Skola/Backtrackng_Skola/obj/Debug/net10.0/ref/Backtrackng_Skola.dll
