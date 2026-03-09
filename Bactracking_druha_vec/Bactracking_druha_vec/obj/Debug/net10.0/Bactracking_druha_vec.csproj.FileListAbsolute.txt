@@ -1,0 +1,15 @@
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/bin/Debug/net10.0/Bactracking_druha_vec
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/bin/Debug/net10.0/Bactracking_druha_vec.deps.json
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/bin/Debug/net10.0/Bactracking_druha_vec.runtimeconfig.json
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/bin/Debug/net10.0/Bactracking_druha_vec.dll
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/bin/Debug/net10.0/Bactracking_druha_vec.pdb
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.GeneratedMSBuildEditorConfig.editorconfig
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.AssemblyInfoInputs.cache
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.AssemblyInfo.cs
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.csproj.CoreCompileInputs.cache
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.sourcelink.json
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.dll
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/refint/Bactracking_druha_vec.dll
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.pdb
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/Bactracking_druha_vec.genruntimeconfig.cache
+/home/adam-zikmund/maturita/PROGRAMOVANI/program_repo/PROGRAM_PROCVICENI/Bactracking_druha_vec/Bactracking_druha_vec/obj/Debug/net10.0/ref/Bactracking_druha_vec.dll
